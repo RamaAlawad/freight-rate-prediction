@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "Run everything (train + score)", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/run_all.py", "console": "integratedTerminal" },
+    { "name": "train.py", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/train.py", "console": "integratedTerminal" },
+    { "name": "score.py", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/score.py",
+      "args": ["--predictions", "validation_predictions.csv",
+               "--december-predictions", "data/december_chart_inputs.csv"],
+      "console": "integratedTerminal" },
+    { "name": "eda.py", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/eda.py", "console": "integratedTerminal" }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "backtest": {
+    "2025-05-01..2025-07-01": {
+      "baseline_rate_per_mile": {
+        "MAE": 206.18429434903717,
+        "MAPE_%": 11.011408696752383,
+        "MedAPE_%": 7.046453156517682,
+        "RMSE": 654.180311044675
+      },
+      "lightgbm": {
+        "MAE": 92.99407269084406,
+        "MAPE_%": 3.9527858534652967,
+        "MedAPE_%": 1.3425742268061185,
+        "RMSE": 630.1372449205451
+      },
+      "lightgbm_plus_recent_offset": {
+        "MAE": 100.07583442074727,
+        "MAPE_%": 4.288479832500323,
+        "MedAPE_%": 1.7190768553639775,
+        "RMSE": 627.1134616904234
+      },
+      "offset_log": 0.0217681642301919
+    },
+    "2025-07-01..2025-09-01": {
+      "baseline_rate_per_mile": {
+        "MAE": 222.73121025248665,
+        "MAPE_%": 10.105531489609126,
+        "MedAPE_%": 6.699325989532114,
+        "RMSE": 662.874707071885
+      },
+      "lightgbm": {
+        "MAE": 114.07117002760404,
+        "MAPE_%": 5.121613199932367,
+        "MedAPE_%": 2.0443088070304554,
+        "RMSE": 626.0681745354785
+      },
+      "lightgbm_plus_recent_offset": {
+        "MAE": 110.01919709675002,
+        "MAPE_%": 4.912689705393831,
+        "MedAPE_%": 1.8457150963678923,
+        "RMSE": 624.0653841401081
+      },
+      "offset_log": 0.00918460768721463
+    },
+    "2025-09-01..2025-11-01": {
+      "baseline_rate_per_mile": {
+        "MAE": 229.09657316845033,
+        "MAPE_%": 10.487418950668491,
+        "MedAPE_%": 6.801434855590214,
+        "RMSE": 670.6599545300177
+      },
+      "lightgbm": {
+        "MAE": 111.94248687767913,
+        "MAPE_%": 4.914791702958467,
+        "MedAPE_%": 2.243077863722163,
+        "RMSE": 634.6437482448457
+      },
+      "lightgbm_plus_recent_offset": {
+        "MAE": 93.33772911400578,
+        "MAPE_%": 4.180406839433517,
+        "MedAPE_%": 1.384111514044224,
+        "RMSE": 629.6815912583702
+      },
+      "offset_log": 0.015706913090455465
+    }
+  },
+  "recent_offset_log": 0.02073679629187808,
+  "feature_importance_gain_pct": {
+    "log_dist": 45.04,
+    "hav": 13.91,
+    "qs": 9.14,
+    "dist": 8.73,
+    "equip": 5.67,
+    "qs_day": 4.87,
+    "weight": 3.59,
+    "mi_day": 1.67,
+    "mi": 1.53,
+    "pickup_lat": 1.52,
+    "delivery_lat": 1.43,
+    "pickup_lon": 1.18,
+    "delivery_lon": 1.13,
+    "dist_ratio": 0.58,
+    "weight_missing": 0.0
+  },
+  "data_quality": {
+    "negative_weight_rows": 292,
+    "missing_weight_rows": 300,
+    "missing_market_index_rows": 374,
+    "validation_rows_with_unseen_pickup_city": 725,
+    "validation_rows_with_unseen_delivery_city": 722,
+    "extreme_label_rows_oof_gt_0.3_log": 677
+  },
+  "validation_pred_summary": {
+    "count": 12000.0,
+    "mean": 2340.45,
+    "std": 1354.69,
+    "min": 208.95,
+    "25%": 1257.68,
+    "50%": 2009.07,
+    "75%": 3341.21,
+    "max": 6652.01
+  }
+}
